@@ -11,7 +11,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await update.message.reply_document(book_file, filename='Your_Book_Title.pdf')  # Change the filename as needed
 
 def main() -> None:
-    application = ApplicationBuilder().token('7279688109:AAGp4ZZjdYo9Zo9ueRwKtj69po7PnGL4YCo').build()
+    application = ApplicationBuilder().token('*****:*********************').build()
 
     application.add_handler(CommandHandler('start', start))
     application.add_handler(CommandHandler('download', download))
